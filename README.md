@@ -3,16 +3,15 @@ This repository contains the replication data and code for the paper "Favoritism
 The paper is largely based on proprietary data aquired in 2014 from the company then called Deltatre (formerly Impire - in 2021 Sportec Solution). Because of the proprietary nature of the data we are unable to share this dataset. Furthermore, given the time that has passed and the restructuring of the company, we cannot guarentee that some of the datasets have been restructured by Sportec Solutions. This means that our code might not run smoothly even after the same dataset has been aquired from Sportec Solution.
 In the repository, we nevertheless provide replication code for the paper as good as we can. We furthermore provide any data that is not proprietary and used in the paper.
 
-##Requirements
+## Requirements
 All code was run on Mac OS 10.15.7 with Stata 14 MP as well as with python 3.6. The following packages need to be installed. For Stata packeges, the code will try to install them if there are not aleady installed, however this might not always work as intended.
 
 |Program|Package|How?|
 |-------|-------|----|
 |Stata|`reghdfe`|`ssc install reghdfe`|
-|-------|-------|----|
 
 
-##Proprietary data
+## Proprietary data
 The data was acquired in 2014 from and spans the years 1992 until mid 2014. It can be aquired from Sportec Solutions (https://www.sportec-solutions.de/). The provided data should contain information on all recorded referee decisions regarding penalties (given or not given), goals (awarded and not awarded) as well as on not given red cards for the German "Bundesliga". In 2014, we received the data in Excel format, however the data provider might have changed this in the meantime. To ensure that the code we provide does run with the purchased data, please make sure that the data is saved as an excel file and contains at a **minimum** the following columns:
 
 |Column Name|Column Content|Possible values|
@@ -48,8 +47,8 @@ The data was acquired in 2014 from and spans the years 1992 until mid 2014. It c
 |BallContactsAway|Ballcontacts (away)|0-873|
 |PossessionHome|Ballpossession (home)|0-69.9|
 |PossessionAway|Ballpossession (away)|67.98|
-|-----------|--------------|---------------|
 
-###Teams included:
+
+### Teams included:
 "1860 München", "Aachen","Augsburg", "Bielefeld", "Bochum", "Braunschweig", "Bremen", "Cottbus", "Dortmund", "Dresden", "Duisburg", "Düsseldorf", "FC Bayern", "Frankfurt", "Freiburg", "Greuther Fürth", "Hamburg", "Hannover", "Hertha BSC", "Hoffenheim", "K'lautern", "KFC Uerdingen 05", "Karlsruhe", "Köln", "Leverkusen", "M'gladbach", "Mainz", "Nürnberg", "Rostock", "SSV Ulm", "Saarbrücken", "Schalke 04", "St. Pauli", "Stuttgart", "Unterhaching", "VfB Leipzig", "Wattenscheid 09", "Wolfsburg"
 
