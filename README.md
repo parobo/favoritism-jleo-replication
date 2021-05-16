@@ -16,6 +16,7 @@ In the repository, we nevertheless provide replication code for the paper as goo
 
 ### dta-files
 * data/members_interpolation.dta -- STATA data file. Called by _do/figure_a1.do_. Contains data on interpolated members of clubs. 
+
 |Variable|Description|
 |--------|-----------|
 |team|team name|
