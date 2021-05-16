@@ -4,15 +4,38 @@ The paper is largely based on proprietary data aquired in 2014 from the company 
 In the repository, we nevertheless provide replication code for the paper as good as we can. We furthermore provide any data that is not proprietary and used in the paper.
 
 ## Contents
+### Folders
+* do -- contains all STATA do-files in order to 
+* data -- contains all the replication data except the proprietary data
+
+### do-files
+* master.do -- master do-file. Used to run the replication. User needs to change file paths in here. The file also creates the folders _tables_ and _figures_.
+* do/data_prep.do -- do-file called by _master.do_: uses the proprietary data as well as other data in the data folder to create the final datasets (_data/ref.dta_,_data/exit.dta_,_data/pause.dta_)
+* do/table_x.do -- do-file called by _master.do_: used to create the table no. _x_ and places it in TeX format in the folder _tables_
+* do/figure_x.do -- do-file called by _master.do_: used to create the figure no. _x_ and places it in PNG format in the folder _figures_
+
+### dta-files
+* data/members_interpolation.dta -- STATA data file. Called by _do/figure_a1.do_. Contains data on interpolated members of clubs. 
+|Variable|Description|
+|--------|-----------|
+|team|team name|
+|season|season|
+|members|member data collected from various sources|
+|members_ipol| members, interpolated|
+|members_is_ipol| dummy for seasons when members where interpolatated|
+
 
 ## Requirements
-All code was run on Mac OS 10.15.7 with Stata 14 MP as well as with python 3.6. The following packages need to be installed. For Stata packeges, the code will try to install them if there are not aleady installed, however this might not always work as intended.
+All code was run on Mac OS 10.15.7 with STATA 14 MP as well as with python 3.6. The following packages need to be installed. For Stata packeges, the code will try to install them if there are not aleady installed, however this might not always work as intended.
 
-|Program|Package|How?|
-|-------|-------|----|
-|Stata|`ftools`|`ssc install ftools`|
-|Stata|`reghdfe`|`ssc install reghdfe`, then `reghdfe, compile`|
-|Stata|`plottig`|`ssc install blindschemes, replace all`
+|Package|How?|
+|-------|----|
+|`ftools`|`ssc install ftools`|
+|`reghdfe`|`ssc install reghdfe`, then `reghdfe, compile`|
+|`blindschemes`|`ssc install blindschemes`|
+|`texdoc`|`ssc install texdoc`|
+|`mrobust`|`ssc install mrobust`|
+
 
 
 ## Proprietary data
@@ -53,5 +76,6 @@ To run the replication, adjust the file _master.do_. Here please update the glob
 Once you have adjusted the path, simply run the do file _master.do_. It will call all other do files and you should end up with all tables in TeX format in the folder _tables_ and with all figures from the paper in the folder _figures_.
 
 ## Some final notes
-Some figures and tables include tests that have been edited in by hand. In this case. The tests will be run by the replication files and saved in the folder _logs_ and a file named after the figure or table. E.g. _figure_2_tests_.
+Some figures and tables include tests that have been edited in by hand. In this case. The tests will be run by the replication files and saved in the folder _logs_ and a file named after the figure or table. E.g. _figure_2_tests.log_.
+Some figures in the paper consist of multiple graphs, in this case, each graph is saved under the _figure_x_y_, where is is the figure number and y increases for each graph (e.g. _figure_4_1_ and _figure_4_2_).
 
