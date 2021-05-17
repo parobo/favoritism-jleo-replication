@@ -253,5 +253,5 @@ Once you have adjusted the path, simply run the do file _master.do_. It will cal
 The creation of some talbes and figures takes a very long time (24+ hours), they are by default not executed. You can change this in the _master.do_ by setting the appropriate global macro to "True".
 
 ## Some final notes
-Some figures and tables include tests that have been edited in by hand. In this case. The tests will be run by the replication files and saved in the folder _logs_ and a file named after the figure or table. E.g. _figure_2_tests.smcl.
+Some figures and tables include tests that have been edited in by hand. In this case. The tests will be run by the replication files and saved in the folder _logs_ and a file named after the figure or table. E.g. _figure_2_tests.smcl_.
 Some figures in the paper consist of multiple graphs, in this case, each graph is saved under the _figure_x_y.png_, where _x_ is the figure number and _y_ increases for each graph (e.g. _figure_4_1.png_ and _figure_4_2.png_).
