@@ -186,9 +186,6 @@ if mod(`run',2000)==0{
 local run = `run'+1
 }
 
-svmat res, names(col)
-
-
 use "data/boe_simulated_2000.dta", clear
 foreach file of numlist 4000(2000)$maxruns{
 	append using "data/boe_simulated_`file'.dta"
@@ -238,15 +235,15 @@ graph drop _all
 
 twoway (scatter goals_diff team) (rcap goals_ci1 goals_ci2 team), scheme(plottig) legend(order(1 "Advantage though bias" 2 "95% CI") pos(6) cols(2)) xtitle(Position in ATT) ytitle(Difference in final goals) xscale(reverse) xlabel(1(1)18) ylabel(-.75(0.25).75) yline(0) scale(2)
 graph rename boe_goals
-graph export figures/boe_goals.png, replace
+graph export figures/figure_5_1.png, replace
 graph close
 twoway (scatter pts_diff team) (rcap pts_ci1 pts_ci2 team), scheme(plottig) legend(order(1 "Advantage though bias" 2 "95% CI") pos(6) cols(2)) xtitle(Position in ATT) ytitle(Difference in final points) xscale(reverse) xlabel(1(1)18) ylabel(-.75(0.25).75) yline(0) scale(2)
 graph rename boe_pts
-graph export figures/boe_pts.png, replace
+graph export figures/figure_5_2.png, replace
 graph close
 twoway (scatter pos_diff team) (rcap pos_ci1 pos_ci2 team), scheme(plottig) legend(order(1 "Advantage though bias" 2 "95% CI") pos(6) cols(2)) xtitle(Position in ATT) ytitle(Difference in final position) xscale(reverse) xlabel(1(1)18) ylabel(-.5(0.25).5) yline(0) scale(1.5)
 graph rename boe_pos
-graph export figures/boe_pos.png, replace
+graph export figures/figure_5_3.png, replace
 graph close
 
 restore
