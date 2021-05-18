@@ -94,7 +94,7 @@ do do/figure_2.do
 do do/figure_3.do
 run do/figure_4_a7.do
 if "$create_fig5" =="True"{
-	noisily di "Creating figure 5. This may take around 24-48 hours."
+	noisily di "Creating figure 5. This may take around 3-4 hours."
 	run do/figure_5.do
 }
 run do/figure_a1.do
