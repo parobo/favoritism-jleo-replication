@@ -179,7 +179,7 @@ if mod(`run',2000)==0{
 	noisily di "Finished run `run'".
 	clear
 	svmat res, names(col)
-	save "$data/boe_simulated_`run'.dta", replace
+	save "data/boe_simulated_`run'.dta", replace
 	matrix drop res
 	matrix drop scores
 }
