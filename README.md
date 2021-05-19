@@ -51,7 +51,7 @@ In the repository, we nevertheless provide replication code for the paper as goo
 |h2\_att\_ahead|Ahead in ATT team in front|
 |h2\_m\_ahead|Ahead in members team in front|
 |h2\_att\_diff|ATT-position difference (team in front)|
-|h2\_m_\diff|Member-position difference (team in front)|
+|h2\_m\_diff|Member-position difference (team in front)|
 |h2\_elo\_diff|Elo difference from perspective of team in front|
 |h2\_elo\_pw|Win probability (elo based)|
 |h2\_invodds_corrected|Win probability (odds based)|
