@@ -10,11 +10,11 @@
 global path = "/path/to/replication/directory" //insert the path to the directory with the replication data and code
 global data = "/path/to/proprietary/data.xlsx" //insert the path to the sportec data that you aquired (please see readme for the format requirements)
 
-global install_packages = "False" //// "True" or "False", choose "False" if you have already installed all required packages, note that an internet connection is required for option "True"
+global install_packages = "True" //// "True" or "False", choose "False" if you have already installed all required packages, note that an internet connection is required for option "True"
 
-global create_fig5 = "False" // "True" or "False", note that figure 5 takes a very long time to create due to the underlying simulations (100.000)
-global create_figa4 = "False" // "True" or "False", note that figure A4 takes a very long time to create due to the many regressions (~100.000) needed
-global create_taba9 = "False" // "True" or "False", note that table A9 takes a very long time to create due to penalized logit method used to account for potentially rare events
+global create_fig5 = "True" // "True" or "False", note that figure 5 takes a very long time to create due to the underlying simulations (100.000) ~ 3-4 hours
+global create_figa4 = "True" // "True" or "False", note that figure A4 takes a very long time to create due to the many regressions (~100.000) needed ~ 12-16 hours
+global create_taba9 = "True" // "True" or "False", note that table A9 takes a very long time to create due to penalized logit method used to account for potentially rare events ~ 20-30 hours
 //--------------------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------------------//
@@ -100,7 +100,7 @@ if "$create_fig5" =="True"{
 run do/figure_a1.do
 run do/figure_a2_a3.do
 if "$create_figa4" =="True"{
-	noisily di "Creating figure A4. This may take around 24-48 hours."
+	noisily di "Creating figure A4. This may take around 12-20 hours."
 	run do/figure_a4.do
 }
 run do/figure_a5.do
@@ -126,7 +126,7 @@ texdoc do do/table_a6.do
 texdoc do do/table_a7.do
 texdoc do do/table_a8.do
 if "$create_taba9" =="True"{
-	noisily di "Creating table A9. This may take around 24-48 hours."
+	noisily di "Creating table A9. This may take around 20-30 hours."
 	texdoc do do/table_a9.do
 }
 run do/table_a10.do
