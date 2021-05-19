@@ -12,9 +12,9 @@ global data = "/path/to/proprietary/data.xlsx" //insert the path to the sportec 
 
 global install_packages = "True" //// "True" or "False", choose "False" if you have already installed all required packages, note that an internet connection is required for option "True"
 
-global create_fig5 = "True" // "True" or "False", note that figure 5 takes a very long time to create due to the underlying simulations (100.000) ~ 3-4 hours
-global create_figa4 = "True" // "True" or "False", note that figure A4 takes a very long time to create due to the many regressions (~100.000) needed ~ 12-16 hours
-global create_taba9 = "True" // "True" or "False", note that table A9 takes a very long time to create due to penalized logit method used to account for potentially rare events ~ 20-30 hours
+global create_fig5 = "False" // "True" or "False", note that figure 5 takes a very long time to create due to the underlying simulations (100.000) ~ 3-4 hours
+global create_figa4 = "False" // "True" or "False", note that figure A4 takes a very long time to create due to the many regressions (~100.000) needed ~ 12-16 hours
+global create_taba9 = "False" // "True" or "False", note that table A9 takes a very long time to create due to penalized logit method used to account for potentially rare events ~ 20-30 hours
 //--------------------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------------------//
 //--------------------------------------------------------------------------------------------------//
