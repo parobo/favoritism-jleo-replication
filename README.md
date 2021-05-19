@@ -254,4 +254,4 @@ The creation of some talbes and figures takes a very long time (24+ hours), they
 
 ## Some final notes
 Some figures and tables include tests that have been edited in by hand. In this case. The tests will be run by the replication files and saved in the folder _logs_ and a file named after the figure or table. E.g. _figure\_2\_tests.smcl_.
-Some figures in the paper consist of multiple graphs, in this case, each graph is saved under the _figure\_x\_y.png_, where _x_ is the figure number and _y_ increases for each graph (e.g. _figure_4\_1.png_ and _figure_4\_2.png_).
+Some figures in the paper consist of multiple graphs, in this case, each graph is saved under the _figure\_x\_y.png_, where _x_ is the figure number and _y_ increases for each graph (e.g. _figure\_4\_1.png_ and _figure\_4\_2.png_).
