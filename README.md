@@ -180,7 +180,7 @@ In the repository, we nevertheless provide replication code for the paper as goo
 
 
 ## Requirements
-All code was run on Mac OS 10.15.7 with Stata/MP 16.1. The following packages need to be installed. For Stata packeges, the code will try to install them if there are not aleady installed, however this might not always work as intended. Therefore it is advised to install them by hand before starting the replication code.
+All code was run on Mac OS 10.15.7 with Stata/MP 16.1. The following packages need to be installed. For Stata packages, the code will try to install them if there are not aleady installed, however this might not always work as intended. Therefore it is advised to install them by hand before starting the replication code.
 
 |Package|How?|
 |-------|----|
