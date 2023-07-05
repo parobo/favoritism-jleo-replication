@@ -1,5 +1,5 @@
 # Replication files for "Favoritism Towards High-status Clubs: Evidence from German Soccer" (JLEO, 2022)
-This repository contains the replication data and code for the paper "Favoritism Towards High-status Clubs: Evidence from German Soccer" (Bose, Feess and Mueller in Journal of Law, Economics and Organization, 2022).
+This repository contains the replication data and code for the paper "Favoritism Towards High-status Clubs: Evidence from German Soccer" ([Bose, Feess and Mueller in Journal of Law, Economics and Organization, 2022](https://academic.oup.com/jleo/article-abstract/38/2/422/6355995)).
 The paper is largely based on proprietary data aquired in 2014 from the company then called Deltatre (formerly Impire - in 2021 Sportec Solution). Because of the proprietary nature of the data we are unable to share this dataset. Furthermore, given the time that has passed and the restructuring of the company, we cannot guarentee that some of the datasets have been restructured by Sportec Solutions. This means that our code might not run smoothly even after the same dataset has been aquired from Sportec Solution.
 In the repository, we nevertheless provide replication code for the paper as good as we can. We furthermore provide any data that is not proprietary and used in the paper.
 
